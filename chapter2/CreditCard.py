@@ -53,5 +53,8 @@ class CreditCard:
         """Process customer payment that reduces balance."""
         self._balance -= amount
 
-cc = CreditCard( 'John Doe',   '1st Bank' ,   '5391 0375 9387 5309' , 1000)
-print(cc.get_account())
+# cc = CreditCard( 'John Doe',   '1st Bank' ,   '5391 0375 9387 5309' , 1000)
+# print(cc.get_account())
+# print(cc.get_balance())
+# cc.charge(900)
+# print(cc.get_balance())
