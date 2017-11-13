@@ -26,8 +26,8 @@ class PredatoryCreditCard(CreditCard.CreditCard):
         Return True if charge was processed.
         Return False and add $5 fee if charge is denied.
         """
-
-        success = super().charge        # call inherited method
+        print(price,"is being charged")
+        success = super().charge(price)        # call inherited method
         if not success:
             self._balance += 5          # add fee
         return success                  # return True or False
@@ -40,3 +40,7 @@ class PredatoryCreditCard(CreditCard.CreditCard):
             self._balance *= monthly_factor
 
 
+pcc = PredatoryCreditCard('John Doe',   '1st Bank' ,   '5391 0375 9387 5309' , 1000, 0.05)
+print(pcc.get_balance())
+pcc.charge(2000)
+print(pcc.get_balance())
