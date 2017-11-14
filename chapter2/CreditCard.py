@@ -38,6 +38,11 @@ class CreditCard:
         """Return current balance."""
         return self._balance
 
+    # 2.30
+    def set_balance(self, new_balance):
+        self._balance = new_balance
+        return self._balance
+
     def charge(self, price):
         """Charge given price to the card, assuming sufficient credit limit.
 
