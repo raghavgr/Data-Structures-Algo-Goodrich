@@ -1,3 +1,4 @@
+"""" Binary Search implementation """
 def binary_search(data, target, low, high):
     """
     data: the sorted list from which we need to find target
