@@ -16,5 +16,3 @@ def disk_usage(path):
             total += disk_usage(childpath)                  # calculate childpath's disk usage
     print('{0:<7}'.format(total), path)
     return total
-
-
