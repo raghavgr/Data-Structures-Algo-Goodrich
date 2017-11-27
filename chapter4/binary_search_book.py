@@ -12,6 +12,7 @@ def binary_search(data, target, low, high):
     else:
         mid = (low + high) // 2
         if target == data[mid]:
+            print(mid)
             return True                 # found a match
         elif target < data[mid]:
             # recur on portion left of the middle
@@ -19,3 +20,5 @@ def binary_search(data, target, low, high):
         else:
             # recur on portion right of the middle
             return binary_search(data, target, mid + 1, high)
+
+print(binary_search([1, 2, 3, 4, 5], 3, 0, 4))
