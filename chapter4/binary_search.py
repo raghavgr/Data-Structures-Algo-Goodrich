@@ -5,10 +5,13 @@ def binary_search(data, target, low, high):
     target: the element we are searching for
     low: current lowest index to search upto
     high: current highest index to search upto
+    
+    Return True and prints the index point where the target is located
     """
     mid = (low + high) // 2
     if data[mid] == target:
-        return mid
+        print(mid)
+        return True
     elif target < data[mid]:
         binary_search(data, target, low, mid - 1)
     else:
