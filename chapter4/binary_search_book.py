@@ -21,4 +21,4 @@ def binary_search(data, target, low, high):
             # recur on portion right of the middle
             return binary_search(data, target, mid + 1, high)
 
-print(binary_search([1, 2, 3, 4, 5], 3, 0, 4))
+print(binary_search([1, 2, 3, 4, 5], 6, 0, 4))
