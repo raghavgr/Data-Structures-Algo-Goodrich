@@ -10,4 +10,10 @@ def bad_fibonacci(num):
         return bad_fibonacci(num - 2) + bad_fibonacci(num - 1)
 
 def fibonacci(num):
-    
+    """ Returns a pair of numbers, (F(n), F(n - 1)) """
+    if num <= 1:
+        return (num, 0)
+    else:
+        (a, b) = fibonacci(num - 1)
+        return (a + b, a)
+
